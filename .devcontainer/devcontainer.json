@@ -10,8 +10,11 @@
     },
 
     "node": {
-      "version": "lts",
-      "nodeGypDependencies": true
+      "version": "lts"
+    },
+
+    "terraform": {
+      "version": "latest"
     }
   },
 
@@ -19,7 +22,7 @@
     "SHELL": "/bin/zsh"
   },
 
-  "extensions": ["redhat.vscode-yaml", "github.copilot"],
+  "extensions": ["redhat.vscode-yaml", "hashicorp.terraform", "github.copilot"],
 
   "remoteUser": "vscode",
   "postCreateCommand": ".devcontainer/postCreateCommand.sh"

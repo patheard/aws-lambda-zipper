@@ -1,4 +1,4 @@
-.PHONY: docker fmt install lint test
+.PHONY: docker fmt install lint test tfapply tfplan
 
 docker:
 	docker build -t aws-lambda-zipper src
@@ -11,6 +11,3 @@ install:
 	
 lint:
 	yarn --cwd=src lint
-
-test:
-	yarn --cwd=src test

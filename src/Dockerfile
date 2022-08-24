@@ -51,4 +51,4 @@ RUN addgroup --gid 10001 --system ${USER} && \
 
 USER ${USER}
 
-ENTRYPOINT ["/usr/local/bin/npx", "aws-lambda-ric", "app.handler"]
+ENTRYPOINT ["/usr/local/bin/npx", "aws-lambda-ric", "zipper.handler"]
