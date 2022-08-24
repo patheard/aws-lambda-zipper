@@ -1,0 +1,26 @@
+{
+  "name": "aws-lambda-zipper",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:buster",
+
+  "features": {
+    "aws-cli": "latest",
+
+    "docker-from-docker": {
+      "version": "latest"
+    },
+
+    "node": {
+      "version": "lts",
+      "nodeGypDependencies": true
+    }
+  },
+
+  "containerEnv": {
+    "SHELL": "/bin/zsh"
+  },
+
+  "extensions": ["redhat.vscode-yaml", "github.copilot"],
+
+  "remoteUser": "vscode",
+  "postCreateCommand": ".devcontainer/postCreateCommand.sh"
+}
